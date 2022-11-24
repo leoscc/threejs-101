@@ -24,6 +24,9 @@ scene.add(cubeMesh);
 
 // RENDER LOOP
 function update() {
+  cubeMesh.rotation.x += 0.01;
+  cubeMesh.rotation.y += 0.01;
+
   renderer.render(scene, camera);
   requestAnimationFrame(update);
 }
