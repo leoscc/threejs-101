@@ -16,6 +16,11 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.set(0, 5, 10);
 camera.lookAt(0, 0, 0);
 
+// CUBE SETUP
+const cubeGeometry = new THREE.BoxGeometry(1, 1, 3);
+const cubeMaterial = new THREE.MeshBasicMaterial();
+const cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
+
 // RENDER LOOP
 function update() {
   renderer.render(scene, camera);
