@@ -6,7 +6,7 @@ document.querySelector(".webGLContainer").appendChild(renderer.domElement);
 // SCENE SETUP
 const scene = new THREE.Scene();
 
-// CAMERA AND ORBIT CONTROLLER
+// CAMERA
 const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
