@@ -15,3 +15,11 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.set(0, 5, 10);
 camera.lookAt(0, 0, 0);
+
+// RENDER LOOP
+function update() {
+  renderer.render(scene, camera);
+  requestAnimationFrame(update);
+}
+
+update();
