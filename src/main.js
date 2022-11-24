@@ -18,7 +18,7 @@ camera.lookAt(0, 0, 0);
 
 // CUBE SETUP
 const cubeGeometry = new THREE.BoxGeometry(1, 1, 3);
-const cubeMaterial = new THREE.MeshBasicMaterial();
+const cubeMaterial = new THREE.MeshNormalMaterial();
 const cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
 scene.add(cubeMesh);
 
